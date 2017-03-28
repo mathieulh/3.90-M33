@@ -1,0 +1,3 @@
+This is a simple tool which will show a menu when the L+R+START+SELECT are pressed. It allows you to currently
+reset psplink, exit back to the vsh or power off the system. It also serves as an example of how to make 
+a simple Impose like menu for your psp.

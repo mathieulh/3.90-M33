@@ -1,0 +1,13 @@
+PSPSDK=$(shell psp-config --pspsdk-path)
+InterruptManagerForKernel_OBJS = InterruptManagerForKernel_0000.o InterruptManagerForKernel_0001.o InterruptManagerForKernel_0002.o InterruptManagerForKernel_0003.o InterruptManagerForKernel_0004.o InterruptManagerForKernel_0005.o InterruptManagerForKernel_0006.o InterruptManagerForKernel_0007.o InterruptManagerForKernel_0008.o InterruptManagerForKernel_0009.o InterruptManagerForKernel_0010.o InterruptManagerForKernel_0011.o InterruptManagerForKernel_0012.o InterruptManagerForKernel_0013.o InterruptManagerForKernel_0014.o InterruptManagerForKernel_0015.o InterruptManagerForKernel_0016.o InterruptManagerForKernel_0017.o InterruptManagerForKernel_0018.o InterruptManagerForKernel_0019.o InterruptManagerForKernel_0020.o InterruptManagerForKernel_0021.o InterruptManagerForKernel_0022.o InterruptManagerForKernel_0023.o InterruptManagerForKernel_0024.o InterruptManagerForKernel_0025.o InterruptManagerForKernel_0026.o InterruptManagerForKernel_0027.o InterruptManagerForKernel_0028.o InterruptManagerForKernel_0029.o InterruptManagerForKernel_0030.o InterruptManagerForKernel_0031.o InterruptManagerForKernel_0032.o InterruptManagerForKernel_0033.o InterruptManagerForKernel_0034.o InterruptManagerForKernel_0035.o InterruptManagerForKernel_0036.o InterruptManagerForKernel_0037.o InterruptManagerForKernel_0038.o InterruptManagerForKernel_0039.o InterruptManagerForKernel_0040.o InterruptManagerForKernel_0041.o InterruptManagerForKernel_0042.o InterruptManagerForKernel_0043.o InterruptManagerForKernel_0044.o InterruptManagerForKernel_0045.o InterruptManagerForKernel_0046.o InterruptManagerForKernel_0047.o InterruptManagerForKernel_0048.o InterruptManagerForKernel_0049.o InterruptManagerForKernel_0050.o InterruptManagerForKernel_0051.o InterruptManagerForKernel_0052.o InterruptManagerForKernel_0053.o 
+
+%.o: InterruptManagerForKernel.S
+	psp-gcc -g -O2 -G0 -Wall -I${PSPSDK}/include -DF_$* $< -c -o $@
+
+all: $(InterruptManagerForKernel_OBJS)
+	psp-ar cru libpspinterruptmanager_kernel380.a $(InterruptManagerForKernel_OBJS)
+	psp-ranlib libpspInterruptmanager_kernel380.a
+
+clean:
+	rm -f *.o
+	rm -f *.a

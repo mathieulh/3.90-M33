@@ -1,0 +1,198 @@
+InterruptManager
+CA04A2B9, 200F, sceKernelRegisterSubIntrHandler
+D61E6961, 2010, sceKernelReleaseSubIntrHandler
+FB8E22EC, 2011, sceKernelEnableSubIntr
+
+ThreadManForUser
+E81CAF8F, 201C, sceKernelCreateCallback
+EDBA5844, 201D, sceKernelDeleteCallback
+349D6D6C, 2021, sceKernelCheckCallback
+82826F70, 2024, sceKernelSleepThreadCB
+D59EAD2F, 2025, sceKernelWakeupThread
+9944F31F, 2027, sceKernelSuspendThread
+278C0DF5, 2029, sceKernelWaitThreadEnd
+CEADEB47, 202B, sceKernelDelayThread
+68DA9E36, 202C, sceKernelDelayThreadCB
+D6DA4BA1, 202F, sceKernelCreateSema
+28B6489C, 2030, sceKernelDeleteSema
+3F53E640, 2031, sceKernelSignalSema
+4E3A1105, 2032, sceKernelWaitSema
+6D212BAC, 2033, sceKernelWaitSemaCB
+58B1F937, 2034, sceKernelPollSema
+55C20A00, 2037, sceKernelCreateEventFlag
+1FB15A32, 2039, sceKernelSetEventFlag
+812346E4, 203A, sceKernelClearEventFlag
+402FCF22, 203B, sceKernelWaitEventFlag
+30FD48F0, 203D, sceKernelPollEventFlag
+C07BB470, 205A, sceKernelCreateFpl
+ED1410E0, 205B, sceKernelDeleteFpl
+D979E9BF, 205C, sceKernelAllocateFpl
+BA6B92E2, 2065, sceKernelSysClock2USec
+E1619D7C, 2066, sceKernelSysClock2USecWide
+DB738F35, 2067, sceKernelGetSystemTime
+82BC5777, 2068, sceKernelGetSystemTimeWide
+369ED59D, 2069, sceKernelGetSystemTimeLow
+446D8DE6, 207C, sceKernelCreateThread
+9FA03CD3, 207D, sceKernelDeleteThread
+F475845D, 207E, sceKernelStartThread
+AA73C935, 2080, sceKernelExitThread
+809CE29B, 2081, sceKernelExitDeleteThread
+383F7BCC, 2083, sceKernelTerminateDeleteThread
+EA748E31, 2086, sceKernelChangeCurrentThreadAttr
+71BC9871, 2087, sceKernelChangeThreadPriority
+293B45B8, 208A, sceKernelGetThreadId
+64D4540E, 2094, sceKernelReferThreadProfiler
+8218B4DD, 2095, sceKernelReferGlobalProfiler
+
+IoFileMgrForUser
+3251EA56, 2096, sceIoPollAsync
+E23EEC33, 2097, sceIoWaitAsync
+B293727F, 209A, sceIoChangeAsyncPriority
+810C4BC3, 209C, sceIoClose
+FF5940B6, 209D, sceIoCloseAsync
+109F50BC, 209E, sceIoOpen
+89AA9906, 209F, sceIoOpenAsync
+6A638D83, 20A0, sceIoRead
+A0B5A7C2, 20A1, sceIoReadAsync
+42EC03AC, 20A2, sceIoWrite
+27EB27B8, 20A4, sceIoLseek
+71B19E77, 20A5, sceIoLseekAsync
+B29DDF9C, 20AA, sceIoDopen
+E3EB004C, 20AB, sceIoDread
+EB092469, 20AC, sceIoDclose
+06A70004, 20AE, sceIoMkdir
+ACE946E8, 20B1, sceIoGetstat
+779103A0, 20B3, sceIoRename
+54F5FB11, 20B4, sceIoDevctl
+E8BC6571, 20B9, sceIoCancel
+
+StdioForUser
+172D316E, 20C3, sceKernelStdin
+A6BAB2E9, 20C4, sceKernelStdout
+F78BA90A, 20C5, sceKernelStderr
+
+UtilsForUser
+91E4F6A7, 20D2, sceKernelLibcClock
+27CC57F0, 20D3, sceKernelLibcTime
+71EC4271, 20D4, sceKernelLibcGettimeofday
+79D1C3FA, 20D5, sceKernelDcacheWritebackAll
+B435DEC5, 20D6, sceKernelDcacheWritebackInvalidateAll
+6AD345D7, 20E0, sceKernelSetGPO
+
+ModuleMgrForUser
+B7F46618, 20E2, sceKernelLoadModuleByID
+50F0C1EC, 20E5, sceKernelStartModule
+D1FF982A, 20E6, sceKernelStopModule
+2E0911AA, 20E7, sceKernelUnloadModule
+D675EBB8, 20E8, sceKernelSelfStopUnloadModule
+F0A26395, 20EC, ModuleMgrForUser_F0A26395
+D8B73127, 20ED, ModuleMgrForUser_D8B73127
+
+SysMemUserForUser
+A291F107, 20EF, sceKernelMaxFreeMemSize
+9D9A5BA1, 20F1, sceKernelGetBlockHeadAddr
+7591C7DB, 20F3, SysMemUserForUser_7591C7DB
+F77D77CB, 20F4, SysMemUserForUser_F77D77CB
+13A5ABEF, 20F5, SysMemUserForUser_13A5ABEF
+237DBD4F, 20F8, sceKernelAllocPartitionMemory
+B6D61D02, 20F9, sceKernelFreePartitionMemory
+
+sceSuspendForUser
+EADB1BD7, 20FA, sceKernelPowerLock
+3AEE7261, 20FB, sceKernelPowerUnlock
+090CCB3F, 20FC, sceKernelPowerTick
+A14F40B2, 20FE, sceKernelVolatileMemTryLock
+A569E425, 20FF, sceKernelVolatileMemUnlock
+
+LoadExecForUser
+05572A5F, 2102, sceKernelExitGame
+4AC57943, 2103, sceKernelRegisterExitCallback
+
+sceGe_user
+1F6752AD, 2106, sceGeEdramGetSize
+E47E40E4, 2107, sceGeEdramGetAddr
+AB49E76A, 210D, sceGeListEnQueue
+B287BD61, 2113, sceGeDrawSync
+A4FC06A4, 2116, sceGeSetCallback
+05DB22CE, 2117, sceGeUnsetCallback
+
+sceRtc
+6FF40ACC, 212F, sceRtcGetTick
+9ED0AE87, 2130, sceRtcCompareTick
+
+sceAudio
+136CAF51, 2141, sceAudioOutputBlocking
+E2D56B2D, 2142, sceAudioOutputPanned
+13F592BC, 2143, sceAudioOutputPannedBlocking
+5EC81C55, 2144, sceAudioChReserve
+6FC46853, 2145, sceAudioChRelease
+B011922F, 2146, sceAudio_B011922F
+CB2E439E, 2147, sceAudioSetChannelDataLen
+95FD0C2D, 2148, sceAudioChangeChannelConfig
+B7E1D8E7, 2149, sceAudioChangeChannelVolume
+
+sceDisplay
+0E20F177, 215B, sceDisplaySetMode
+289D82FE, 2161, sceDisplaySetFrameBuf
+4D4E10EC, 2166, sceDisplayIsVblank
+36CDFADE, 2169, sceDisplayWaitVblank
+984C27E7, 216B, sceDisplayWaitVblankStart
+773DD3A3, 216D, sceDisplayGetCurrentHcount
+
+sceCtrl
+6A2774F3, 2170, sceCtrlSetSamplingCycle
+1F4011E6, 2172, sceCtrlSetSamplingMode
+1F803938, 2176, sceCtrlReadBufferPositive
+
+scePower
+04B7766E, 21AF, scePowerRegisterCallback
+DFA8BAF8, 21B0, scePowerUnregisterCallback
+EA382A27, 21BB, scePower_EA382A27
+
+sceUmdUser
+46EBB729, 21C9, sceUmdCheckMedium
+C6183D47, 21CA, sceUmdActivate
+8EF08FCE, 21CC, sceUmdWaitDriveStat
+56202973, 21CD, sceUmdWaitDriveStatWithTimer
+6B4A146C, 21D0, sceUmdGetDriveStat
+20628E6F, 21D1, sceUmdGetErrorStat
+AEE7404D, 21D3, sceUmdRegisterUMDCallBack
+BD2BDE07, 21D4, sceUmdUnRegisterUMDCallBack
+
+sceWlanDrv
+D7763699, 21D8, sceWlanGetSwitchState
+
+sceUtility
+50C4CD57, 221A, sceUtilitySavedataInitStart
+9790B33C, 221B, sceUtilitySavedataShutdownStart
+D4B95FFB, 221C, sceUtilitySavedataUpdate
+8874DBE0, 221D, sceUtilitySavedataGetStatus
+2AD8E239, 221E, sceUtilityMsgDialogInitStart
+67AF3428, 221F, sceUtilityMsgDialogShutdownStart
+95FC253B, 2220, sceUtilityMsgDialogUpdate
+9A1C91D7, 2221, sceUtilityMsgDialogGetStatus
+A5DA2406, 2234, sceUtilityGetSystemParamInt
+34B78343, 2235, sceUtilityGetSystemParamString
+1579A159, 2239, 
+64D50C56, 223A, 
+
+sceSasCore
+A3589D81, 2273, 
+50A14DFC, 2274, 
+68A46B95, 2275, 
+440CA7D8, 2276, 
+AD84D37F, 2277, 
+99944089, 2278, 
+B7660A23, 2279, 
+019B25EB, 227C, 
+9EC3676A, 227D, 
+5F9529F6, 227E, 
+74AE582A, 227F, 
+CBCD4F79, 2280, 
+42778A9F, 2281, 
+A0CF2FA4, 2282, 
+76F01ACA, 2283, 
+F983B186, 2284, 
+D5A229C9, 2285, 
+33D4AB37, 2286, 
+267A6DD2, 2287, 

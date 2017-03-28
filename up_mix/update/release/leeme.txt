@@ -1,0 +1,24 @@
+3.03/3.10 OE mix para UP.
+
+Este es un update de Oe para permitir a los usuarios de UP tener el vsh de 3.03 (que es mas
+personalizable), y el kernel de 3.10 para cargar los juegos psp y psx.
+
+También he hecho este update para solucionar algunas cosas molestas para los usuarios de UP
+(el pulsar L al principio y al recuperarse del sleep).
+
+Instrucciones
+
+- En la nand original de la PSP, instala 3.10 OE-A (o OE-A', no importa, porqeue los parches de OE-A' seran aplicados)
+- En la nand de UP, instala 3.03 OE-C-
+- Copia 303_10mix a GAME150, y ejecutalo desde la nand de UP.
+- Hecho.
+
+Ahora tendrás los siguientes beneficios:
+
+- 3.03 vsh, que es totalmente personalizable
+- Cuando ejecutes un juego de psp o de psx, o un homebrew, OE se cambiara a la nand de up (donde
+esta instalada 3.10 OE), permitiendote jugar a juegos de psx y psp en el firmware superior, y dado
+que se ejecutarán en la nand de la psp, no tendrás problemas con los juegos psx o con 333 Mhz).
+- Cuando te recuperes del sleep mode, OE también volverá a la nand donde estabas, asi que no tienes que pulsar L
+(de hecho, no debes hacerlo :p).
+

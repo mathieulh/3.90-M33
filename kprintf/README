@@ -1,0 +1,5 @@
+Redirects Kprintf to the serial port (115.2kbps) under devhook.  Add
+the prx to flash0/kd/pspbtcnf.txt. 
+
+If the serial port is set to "Kprintf" in devhook, this is
+unnecessary.  Doh.

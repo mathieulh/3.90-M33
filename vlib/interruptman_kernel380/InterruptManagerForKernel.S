@@ -1,0 +1,169 @@
+	.set noreorder
+
+#include "pspimport.s"
+
+// Build List
+// InterruptManagerForKernel_0000.o InterruptManagerForKernel_0001.o InterruptManagerForKernel_0002.o InterruptManagerForKernel_0003.o InterruptManagerForKernel_0004.o InterruptManagerForKernel_0005.o InterruptManagerForKernel_0006.o InterruptManagerForKernel_0007.o InterruptManagerForKernel_0008.o InterruptManagerForKernel_0009.o InterruptManagerForKernel_0010.o InterruptManagerForKernel_0011.o InterruptManagerForKernel_0012.o InterruptManagerForKernel_0013.o InterruptManagerForKernel_0014.o InterruptManagerForKernel_0015.o InterruptManagerForKernel_0016.o InterruptManagerForKernel_0017.o InterruptManagerForKernel_0018.o InterruptManagerForKernel_0019.o InterruptManagerForKernel_0020.o InterruptManagerForKernel_0021.o InterruptManagerForKernel_0022.o InterruptManagerForKernel_0023.o InterruptManagerForKernel_0024.o InterruptManagerForKernel_0025.o InterruptManagerForKernel_0026.o InterruptManagerForKernel_0027.o InterruptManagerForKernel_0028.o InterruptManagerForKernel_0029.o InterruptManagerForKernel_0030.o InterruptManagerForKernel_0031.o InterruptManagerForKernel_0032.o InterruptManagerForKernel_0033.o InterruptManagerForKernel_0034.o InterruptManagerForKernel_0035.o InterruptManagerForKernel_0036.o InterruptManagerForKernel_0037.o InterruptManagerForKernel_0038.o InterruptManagerForKernel_0039.o InterruptManagerForKernel_0040.o InterruptManagerForKernel_0041.o InterruptManagerForKernel_0042.o InterruptManagerForKernel_0043.o InterruptManagerForKernel_0044.o InterruptManagerForKernel_0045.o InterruptManagerForKernel_0046.o InterruptManagerForKernel_0047.o InterruptManagerForKernel_0048.o InterruptManagerForKernel_0049.o InterruptManagerForKernel_0050.o InterruptManagerForKernel_0051.o InterruptManagerForKernel_0052.o InterruptManagerForKernel_0053.o 
+
+#ifdef F_InterruptManagerForKernel_0000
+	IMPORT_START	"InterruptManagerForKernel",0x00090011
+#endif
+#ifdef F_InterruptManagerForKernel_0001
+	IMPORT_FUNC	"InterruptManagerForKernel",0x02314986,sceKernelCpuEnableIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0002
+	IMPORT_FUNC	"InterruptManagerForKernel",0x092968F4,sceKernelCpuSuspendIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0003
+	IMPORT_FUNC	"InterruptManagerForKernel",0x0B907DBC,InterruptManagerForKernel_0B907DBC
+#endif
+#ifdef F_InterruptManagerForKernel_0004
+	IMPORT_FUNC	"InterruptManagerForKernel",0x1234EFF5,SupportIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0005
+	IMPORT_FUNC	"InterruptManagerForKernel",0x2B16BD19,InterruptManagerForKernel_36B1EF81
+#endif
+#ifdef F_InterruptManagerForKernel_0006
+	IMPORT_FUNC	"InterruptManagerForKernel",0x301F5249,sceKernelSetIntrLevel
+#endif
+#ifdef F_InterruptManagerForKernel_0007
+	IMPORT_FUNC	"InterruptManagerForKernel",0x30C08374,sceKernelGetCpuClockCounter
+#endif
+#ifdef F_InterruptManagerForKernel_0008
+	IMPORT_FUNC	"InterruptManagerForKernel",0x3B84732D,sceKernelCpuResumeIntrWithSync
+#endif
+#ifdef F_InterruptManagerForKernel_0009
+	IMPORT_FUNC	"InterruptManagerForKernel",0x3F59FE41,ReturnToThread
+#endif
+#ifdef F_InterruptManagerForKernel_0010
+	IMPORT_FUNC	"InterruptManagerForKernel",0x40A4AF82,QueryInterruptManCB
+#endif
+#ifdef F_InterruptManagerForKernel_0011
+	IMPORT_FUNC	"InterruptManagerForKernel",0x4D6E7305,sceKernelEnableIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0012
+	IMPORT_FUNC	"InterruptManagerForKernel",0x4E9F704C,sceKernelRegisterSystemCallTable
+#endif
+#ifdef F_InterruptManagerForKernel_0013
+	IMPORT_FUNC	"InterruptManagerForKernel",0x51C46A26,sceKernelQuerySystemCall
+#endif
+#ifdef F_InterruptManagerForKernel_0014
+	IMPORT_FUNC	"InterruptManagerForKernel",0x51C866EE,sceKernelCallSubIntrHandler
+#endif
+#ifdef F_InterruptManagerForKernel_0015
+	IMPORT_FUNC	"InterruptManagerForKernel",0x53E4A7A0,_sceKernelGetCpuClockCounterLow
+#endif
+#ifdef F_InterruptManagerForKernel_0016
+	IMPORT_FUNC	"InterruptManagerForKernel",0x54543A3D,InterruptManagerForKernel_72CE22E8
+#endif
+#ifdef F_InterruptManagerForKernel_0017
+	IMPORT_FUNC	"InterruptManagerForKernel",0x58DD8978,sceKernelRegisterIntrHandler
+#endif
+#ifdef F_InterruptManagerForKernel_0018
+	IMPORT_FUNC	"InterruptManagerForKernel",0x5F10D406,sceKernelCpuResumeIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0019
+	IMPORT_FUNC	"InterruptManagerForKernel",0x83F649F0,InterruptManagerForKernel_8DC2BAEF
+#endif
+#ifdef F_InterruptManagerForKernel_0020
+	IMPORT_FUNC	"InterruptManagerForKernel",0x8B3F0220,sceKernelResumeIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0021
+	IMPORT_FUNC	"InterruptManagerForKernel",0x9328737C,_sceKernelGetCpuClockCounterHigh
+#endif
+#ifdef F_InterruptManagerForKernel_0022
+	IMPORT_FUNC	"InterruptManagerForKernel",0x9801DAFF,InterruptManagerForKernel_53991063
+#endif
+#ifdef F_InterruptManagerForKernel_0023
+	IMPORT_FUNC	"InterruptManagerForKernel",0x9A265F8C,sceKernelRegisterSubIntrHandler
+#endif
+#ifdef F_InterruptManagerForKernel_0024
+	IMPORT_FUNC	"InterruptManagerForKernel",0x9A81B995,sceKernelDisableSubIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0025
+	IMPORT_FUNC	"InterruptManagerForKernel",0xAA956049,sceKernelGetCpuClockCounterWide
+#endif
+#ifdef F_InterruptManagerForKernel_0026
+	IMPORT_FUNC	"InterruptManagerForKernel",0xAAEB2892,InterruptManagerForKernel_7AD28215
+#endif
+#ifdef F_InterruptManagerForKernel_0027
+	IMPORT_FUNC	"InterruptManagerForKernel",0xABA55FCF,InterruptManagerForKernel_05E9D6C4
+#endif
+#ifdef F_InterruptManagerForKernel_0028
+	IMPORT_FUNC	"InterruptManagerForKernel",0xACCCB980,InterruptManagerForKernel_07E138EE
+#endif
+#ifdef F_InterruptManagerForKernel_0029
+	IMPORT_FUNC	"InterruptManagerForKernel",0xAF30D0B0,SaveThreadContext
+#endif
+#ifdef F_InterruptManagerForKernel_0030
+	IMPORT_FUNC	"InterruptManagerForKernel",0xB0539E88,sceKernelGetUserIntrStack
+#endif
+#ifdef F_InterruptManagerForKernel_0031
+	IMPORT_FUNC	"InterruptManagerForKernel",0xB585CE0B,InterruptManagerForKernel_D63F3B31
+#endif
+#ifdef F_InterruptManagerForKernel_0032
+	IMPORT_FUNC	"InterruptManagerForKernel",0xB807843D,InterruptManagerForKernel_DD55A192
+#endif
+#ifdef F_InterruptManagerForKernel_0033
+	IMPORT_FUNC	"InterruptManagerForKernel",0xBD57D8DF,sceKernelGetInterruptExitCount
+#endif
+#ifdef F_InterruptManagerForKernel_0034
+	IMPORT_FUNC	"InterruptManagerForKernel",0xC24EEB37,InterruptManagerForKernel_7EF7500F
+#endif
+#ifdef F_InterruptManagerForKernel_0035
+	IMPORT_FUNC	"InterruptManagerForKernel",0xC485DED4,InterruptManagerForKernel_43A7BBDC
+#endif
+#ifdef F_InterruptManagerForKernel_0036
+	IMPORT_FUNC	"InterruptManagerForKernel",0xC920F878,UnSupportIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0037
+	IMPORT_FUNC	"InterruptManagerForKernel",0xCDC91EC7,RegisterContextHooks
+#endif
+#ifdef F_InterruptManagerForKernel_0038
+	IMPORT_FUNC	"InterruptManagerForKernel",0xD18DC66D,sceKernelCallUserIntrHandler
+#endif
+#ifdef F_InterruptManagerForKernel_0039
+	IMPORT_FUNC	"InterruptManagerForKernel",0xD61E6961,sceKernelReleaseSubIntrHandler
+#endif
+#ifdef F_InterruptManagerForKernel_0040
+	IMPORT_FUNC	"InterruptManagerForKernel",0xD774BA45,sceKernelDisableIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0041
+	IMPORT_FUNC	"InterruptManagerForKernel",0xD810929A,InterruptManagerForKernel_15894D0B
+#endif
+#ifdef F_InterruptManagerForKernel_0042
+	IMPORT_FUNC	"InterruptManagerForKernel",0xD8410DE6,InterruptManagerForKernel_D8410DE6
+#endif
+#ifdef F_InterruptManagerForKernel_0043
+	IMPORT_FUNC	"InterruptManagerForKernel",0xE6D809BE,sceKernelResumeSubIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0044
+	IMPORT_FUNC	"InterruptManagerForKernel",0xEA71700D,sceKernelSuspendIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0045
+	IMPORT_FUNC	"InterruptManagerForKernel",0xEF09AC4B,sceKernelSetPrimarySyscallHandler
+#endif
+#ifdef F_InterruptManagerForKernel_0046
+	IMPORT_FUNC	"InterruptManagerForKernel",0xEF97BD5A,ReleaseContextHooks
+#endif
+#ifdef F_InterruptManagerForKernel_0047
+	IMPORT_FUNC	"InterruptManagerForKernel",0xF562A281,sceKernelIsSubInterruptOccurred
+#endif
+#ifdef F_InterruptManagerForKernel_0048
+	IMPORT_FUNC	"InterruptManagerForKernel",0xF56F1ACD,InterruptManagerForKernel_7A05D976
+#endif
+#ifdef F_InterruptManagerForKernel_0049
+	IMPORT_FUNC	"InterruptManagerForKernel",0xF7D2FF4B,sceKernelSuspendSubIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0050
+	IMPORT_FUNC	"InterruptManagerForKernel",0xF987B1F0,sceKernelReleaseIntrHandler
+#endif
+#ifdef F_InterruptManagerForKernel_0051
+	IMPORT_FUNC	"InterruptManagerForKernel",0xFB8E22EC,sceKernelEnableSubIntr
+#endif
+#ifdef F_InterruptManagerForKernel_0052
+	IMPORT_FUNC	"InterruptManagerForKernel",0xFE28C6D9,sceKernelIsIntrContext
+#endif
+#ifdef F_InterruptManagerForKernel_0053
+	IMPORT_FUNC	"InterruptManagerForKernel",0xFF632732,sceKernelGetIntrSyscallFrame
+#endif

@@ -1,0 +1,459 @@
+<html><body><pre>
+
+; ==== Section .text - Address 0x00000000 Size 0x0000029C Flags 0x0006
+
+; ======================================================
+; Subroutine module_start - Address 0x00000000 
+<a name="module_start">module_start:</a>
+
+<a name="0x00000000"></a>	0x00000000: 0x3C040000 '...&lt;' - lui        $a0, 0x0
+<a name="0x00000004"></a>	0x00000004: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x00000008"></a>	0x00000008: 0xAFBF0000 '....' - sw         $ra, 0x0($sp)
+<a name="0x0000000C"></a>	0x0000000C: 0x0C0000A7 '....' - jal        <a href="#sctrlHENSetStartModuleHandler">sctrlHENSetStartModuleHandler</a>
+<a name="0x00000010"></a>	0x00000010: 0x24840178 'x..$' - addiu      $a0, $a0, 0x178
+<a name="0x00000014"></a>	0x00000014: 0x8FBF0000 '....' - lw         $ra, 0x0($sp)
+<a name="0x00000018"></a>	0x00000018: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+<a name="0x0000001C"></a>	0x0000001C: 0xAC620640 '@.b.' - sw         $v0, 0x640($v1)
+<a name="0x00000020"></a>	0x00000020: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+<a name="0x00000024"></a>	0x00000024: 0x03E00008 '....' - jr         $ra
+<a name="0x00000028"></a>	0x00000028: 0x00001021 '!...' - move       $v0, $zr
+
+; End Subroutine module_start
+; ======================================================
+
+; ======================================================
+; Subroutine sceRtcSetDosTimeP - Address 0x0000002C 
+<a name="sceRtcSetDosTimeP">sceRtcSetDosTimeP:</a>
+
+<a name="0x0000002C"></a>	0x0000002C: 0x080000AD '....' - j          <a href="#sceRtcSetDosTime">sceRtcSetDosTime</a>
+<a name="0x00000030"></a>	0x00000030: 0x00000000 '....' - nop        
+
+; End Subroutine sceRtcSetDosTimeP
+; ======================================================
+
+; ======================================================
+; Subroutine sceRtcGetCurrentClockLocalTimeP - Address 0x00000034 
+<a name="sceRtcGetCurrentClockLocalTimeP">sceRtcGetCurrentClockLocalTimeP:</a>
+
+<a name="0x00000034"></a>	0x00000034: 0x080000AB '....' - j          <a href="#sceRtcGetCurrentClockLocalTime">sceRtcGetCurrentClockLocalTime</a>
+<a name="0x00000038"></a>	0x00000038: 0x00000000 '....' - nop        
+
+; End Subroutine sceRtcGetCurrentClockLocalTimeP
+; ======================================================
+
+; ======================================================
+; Subroutine MyDread - Address 0x0000003C 
+<a name="MyDread">MyDread:</a>
+
+<a name="0x0000003C"></a>	0x0000003C: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x00000040"></a>	0x00000040: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000044"></a>	0x00000044: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000048"></a>	0x00000048: 0xAFBF000C '....' - sw         $ra, 0xC($sp)
+<a name="0x0000004C"></a>	0x0000004C: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000050"></a>	0x00000050: 0x00809021 '!...' - move       $s2, $a0
+<a name="0x00000054"></a>	0x00000054: 0x0C0000A9 '....' - jal        <a href="#sceKernelGetCompiledSdkVersion">sceKernelGetCompiledSdkVersion</a>
+<a name="0x00000058"></a>	0x00000058: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x0000005C"></a>	0x0000005C: 0x3C030308 '...&lt;' - lui        $v1, 0x308
+<a name="0x00000060"></a>	0x00000060: 0x0043102A '*.C.' - slt        $v0, $v0, $v1
+<a name="0x00000064"></a>	0x00000064: 0x1440000D '..@.' - bnez       $v0, <a href="#loc_0000009C">loc_0000009C</a>
+<a name="0x00000068"></a>	0x00000068: 0x00008021 '!...' - move       $s0, $zr
+<a name="0x0000006C"></a>	0x0000006C: 0x8E300158 'X.0.' - lw         $s0, 0x158($s1)
+<a name="0x00000070"></a>	0x00000070: 0x1200000A '....' - beqz       $s0, <a href="#loc_0000009C">loc_0000009C</a>
+<a name="0x00000074"></a>	0x00000074: 0x24020414 '...$' - li         $v0, 0x414
+<a name="0x00000078"></a>	0x00000078: 0x8E050000 '....' - lw         $a1, 0x0($s0)
+<a name="0x0000007C"></a>	0x0000007C: 0x10A20008 '....' - beq        $a1, $v0, <a href="#loc_000000A0">loc_000000A0</a>
+<a name="0x00000080"></a>	0x00000080: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+<a name="0x00000084"></a>	0x00000084: 0x3C040000 '...&lt;' - lui        $a0, 0x0
+<a name="0x00000088"></a>	0x00000088: 0x0C0000AF '....' - jal        <a href="#Kprintf">Kprintf</a>
+<a name="0x0000008C"></a>	0x0000008C: 0x248404EC '...$' - addiu      $a0, $a0, 0x4EC
+<a name="0x00000090"></a>	0x00000090: 0x3C028001 '...&lt;' - lui        $v0, 0x8001
+<a name="0x00000094"></a>	0x00000094: 0x0800003E '>...' - j          <a href="#loc_000000F8">loc_000000F8</a>
+<a name="0x00000098"></a>	0x00000098: 0x34520016 '..R4' - ori        $s2, $v0, 0x16
+
+<a name="loc_0000009C">loc_0000009C:</a>
+		; Refs: <a href="#0x00000064">0x00000064</a> <a href="#0x00000070">0x00000070</a> 
+<a name="0x0000009C"></a>	0x0000009C: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+
+<a name="loc_000000A0">loc_000000A0:</a>
+		; Refs: <a href="#0x0000007C">0x0000007C</a> 
+<a name="0x000000A0"></a>	0x000000A0: 0x8C42063C '&lt;.B.' - lw         $v0, 0x63C($v0)
+<a name="0x000000A4"></a>	0x000000A4: 0x02402021 '! @.' - move       $a0, $s2
+<a name="0x000000A8"></a>	0x000000A8: 0x0040F809 '..@.' - jalr       $v0
+<a name="0x000000AC"></a>	0x000000AC: 0x02202821 '!( .' - move       $a1, $s1
+<a name="0x000000B0"></a>	0x000000B0: 0x18400011 '..@.' - blez       $v0, <a href="#loc_000000F8">loc_000000F8</a>
+<a name="0x000000B4"></a>	0x000000B4: 0x00409021 '!.@.' - move       $s2, $v0
+<a name="0x000000B8"></a>	0x000000B8: 0x12000010 '....' - beqz       $s0, <a href="#loc_000000FC">loc_000000FC</a>
+<a name="0x000000BC"></a>	0x000000BC: 0x02401021 '!.@.' - move       $v0, $s2
+<a name="0x000000C0"></a>	0x000000C0: 0x8E240158 'X.$.' - lw         $a0, 0x158($s1)
+<a name="0x000000C4"></a>	0x000000C4: 0x24060110 '...$' - li         $a2, 0x110
+<a name="0x000000C8"></a>	0x000000C8: 0x00802821 '!(..' - move       $a1, $a0
+<a name="0x000000CC"></a>	0x000000CC: 0x0C0000BB '....' - jal        <a href="#memmove">memmove</a>
+<a name="0x000000D0"></a>	0x000000D0: 0x24840004 '...$' - addiu      $a0, $a0, 0x4
+<a name="0x000000D4"></a>	0x000000D4: 0x82020014 '....' - lb         $v0, 0x14($s0)
+<a name="0x000000D8"></a>	0x000000D8: 0x14400006 '..@.' - bnez       $v0, <a href="#loc_000000F4">loc_000000F4</a>
+<a name="0x000000DC"></a>	0x000000DC: 0x24020414 '...$' - li         $v0, 0x414
+<a name="0x000000E0"></a>	0x000000E0: 0x26040014 '...&' - addiu      $a0, $s0, 0x14
+<a name="0x000000E4"></a>	0x000000E4: 0x26050004 '...&' - addiu      $a1, $s0, 0x4
+<a name="0x000000E8"></a>	0x000000E8: 0x0C0000B9 '....' - jal        <a href="#strncpy">strncpy</a>
+<a name="0x000000EC"></a>	0x000000EC: 0x2406000D '...$' - li         $a2, 0xD
+<a name="0x000000F0"></a>	0x000000F0: 0x24020414 '...$' - li         $v0, 0x414
+
+<a name="loc_000000F4">loc_000000F4:</a>
+		; Refs: <a href="#0x000000D8">0x000000D8</a> 
+<a name="0x000000F4"></a>	0x000000F4: 0xAE020000 '....' - sw         $v0, 0x0($s0)
+
+<a name="loc_000000F8">loc_000000F8:</a>
+		; Refs: <a href="#0x00000094">0x00000094</a> <a href="#0x000000B0">0x000000B0</a> 
+<a name="0x000000F8"></a>	0x000000F8: 0x02401021 '!.@.' - move       $v0, $s2
+
+<a name="loc_000000FC">loc_000000FC:</a>
+		; Refs: <a href="#0x000000B8">0x000000B8</a> 
+<a name="0x000000FC"></a>	0x000000FC: 0x8FBF000C '....' - lw         $ra, 0xC($sp)
+<a name="0x00000100"></a>	0x00000100: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000104"></a>	0x00000104: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000108"></a>	0x00000108: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x0000010C"></a>	0x0000010C: 0x03E00008 '....' - jr         $ra
+<a name="0x00000110"></a>	0x00000110: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+; End Subroutine MyDread
+; ======================================================
+
+; ======================================================
+; Subroutine ClearCaches - Address 0x00000114 
+<a name="ClearCaches">ClearCaches:</a>
+		; Refs: <a href="#0x0000015C">0x0000015C</a> <a href="#0x00000260">0x00000260</a> 
+<a name="0x00000114"></a>	0x00000114: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x00000118"></a>	0x00000118: 0xAFBF0000 '....' - sw         $ra, 0x0($sp)
+<a name="0x0000011C"></a>	0x0000011C: 0x0C0000B5 '....' - jal        <a href="#sceKernelDcacheWritebackAll">sceKernelDcacheWritebackAll</a>
+<a name="0x00000120"></a>	0x00000120: 0x00000000 '....' - nop        
+<a name="0x00000124"></a>	0x00000124: 0x8FBF0000 '....' - lw         $ra, 0x0($sp)
+<a name="0x00000128"></a>	0x00000128: 0x080000B1 '....' - j          <a href="#sceKernelIcacheClearAll">sceKernelIcacheClearAll</a>
+<a name="0x0000012C"></a>	0x0000012C: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+; End Subroutine ClearCaches
+; ======================================================
+
+; ======================================================
+; Subroutine Fatms_sceIoAddDrv - Address 0x00000130 
+<a name="Fatms_sceIoAddDrv">Fatms_sceIoAddDrv:</a>
+
+<a name="0x00000130"></a>	0x00000130: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x00000134"></a>	0x00000134: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000138"></a>	0x00000138: 0xAFBF0004 '....' - sw         $ra, 0x4($sp)
+<a name="0x0000013C"></a>	0x0000013C: 0x10800009 '....' - beqz       $a0, <a href="#loc_00000164">loc_00000164</a>
+<a name="0x00000140"></a>	0x00000140: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x00000144"></a>	0x00000144: 0x8C840010 '....' - lw         $a0, 0x10($a0)
+<a name="0x00000148"></a>	0x00000148: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+<a name="0x0000014C"></a>	0x0000014C: 0x8C830034 '4...' - lw         $v1, 0x34($a0)
+<a name="0x00000150"></a>	0x00000150: 0xAC43063C '&lt;.C.' - sw         $v1, 0x63C($v0)
+<a name="0x00000154"></a>	0x00000154: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+<a name="0x00000158"></a>	0x00000158: 0x2442003C '&lt;.B$' - addiu      $v0, $v0, 0x3C
+<a name="0x0000015C"></a>	0x0000015C: 0x0C000045 'E...' - jal        <a href="#ClearCaches">ClearCaches</a>
+<a name="0x00000160"></a>	0x00000160: 0xAC820034 '4...' - sw         $v0, 0x34($a0)
+
+<a name="loc_00000164">loc_00000164:</a>
+		; Refs: <a href="#0x0000013C">0x0000013C</a> 
+<a name="0x00000164"></a>	0x00000164: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000168"></a>	0x00000168: 0x8FBF0004 '....' - lw         $ra, 0x4($sp)
+<a name="0x0000016C"></a>	0x0000016C: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000170"></a>	0x00000170: 0x080000B3 '....' - j          <a href="#sceIoAddDrv">sceIoAddDrv</a>
+<a name="0x00000174"></a>	0x00000174: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+; End Subroutine Fatms_sceIoAddDrv
+; ======================================================
+
+; ======================================================
+; Subroutine OnModuleStart - Address 0x00000178 
+<a name="OnModuleStart">OnModuleStart:</a>
+
+<a name="0x00000178"></a>	0x00000178: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x0000017C"></a>	0x0000017C: 0x3C050000 '...&lt;' - lui        $a1, 0x0
+<a name="0x00000180"></a>	0x00000180: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000184"></a>	0x00000184: 0xAFBF0004 '....' - sw         $ra, 0x4($sp)
+<a name="0x00000188"></a>	0x00000188: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x0000018C"></a>	0x0000018C: 0x24A5052C ',..$' - addiu      $a1, $a1, 0x52C
+<a name="0x00000190"></a>	0x00000190: 0x0C0000B7 '....' - jal        <a href="#strcmp">strcmp</a>
+<a name="0x00000194"></a>	0x00000194: 0x24840008 '...$' - addiu      $a0, $a0, 0x8
+<a name="0x00000198"></a>	0x00000198: 0x14400034 '4.@.' - bnez       $v0, <a href="#loc_0000026C">loc_0000026C</a>
+<a name="0x0000019C"></a>	0x0000019C: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+<a name="0x000001A0"></a>	0x000001A0: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+<a name="0x000001A4"></a>	0x000001A4: 0x3C023FFF '.?.&lt;' - lui        $v0, 0x3FFF
+<a name="0x000001A8"></a>	0x000001A8: 0x3442FFFF '..B4' - ori        $v0, $v0, 0xFFFF
+<a name="0x000001AC"></a>	0x000001AC: 0x24630130 '0.c$' - addiu      $v1, $v1, 0x130
+<a name="0x000001B0"></a>	0x000001B0: 0x00621824 '$.b.' - and        $v1, $v1, $v0
+<a name="0x000001B4"></a>	0x000001B4: 0x00031882 '....' - srl        $v1, $v1, 2
+<a name="0x000001B8"></a>	0x000001B8: 0x3C020C00 '...&lt;' - lui        $v0, 0xC00
+<a name="0x000001BC"></a>	0x000001BC: 0x00623825 '%8b.' - or         $a3, $v1, $v0
+<a name="0x000001C0"></a>	0x000001C0: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+<a name="0x000001C4"></a>	0x000001C4: 0x3C0403FF '...&lt;' - lui        $a0, 0x3FF
+<a name="0x000001C8"></a>	0x000001C8: 0x24420034 '4.B$' - addiu      $v0, $v0, 0x34
+<a name="0x000001CC"></a>	0x000001CC: 0x3484FFFF '...4' - ori        $a0, $a0, 0xFFFF
+<a name="0x000001D0"></a>	0x000001D0: 0x00021082 '....' - srl        $v0, $v0, 2
+<a name="0x000001D4"></a>	0x000001D4: 0x00441024 '$.D.' - and        $v0, $v0, $a0
+<a name="0x000001D8"></a>	0x000001D8: 0x3C050800 '...&lt;' - lui        $a1, 0x800
+<a name="0x000001DC"></a>	0x000001DC: 0x00453025 '%0E.' - or         $a2, $v0, $a1
+<a name="0x000001E0"></a>	0x000001E0: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+<a name="0x000001E4"></a>	0x000001E4: 0x2442002C ',.B$' - addiu      $v0, $v0, 0x2C
+<a name="0x000001E8"></a>	0x000001E8: 0x00021082 '....' - srl        $v0, $v0, 2
+<a name="0x000001EC"></a>	0x000001EC: 0x00441024 '$.D.' - and        $v0, $v0, $a0
+<a name="0x000001F0"></a>	0x000001F0: 0x00452025 '% E.' - or         $a0, $v0, $a1
+<a name="0x000001F4"></a>	0x000001F4: 0x8E020084 '....' - lw         $v0, 0x84($s0)
+<a name="0x000001F8"></a>	0x000001F8: 0x3C030002 '...&lt;' - lui        $v1, 0x2
+<a name="0x000001FC"></a>	0x000001FC: 0x34693EDC '.>i4' - ori        $t1, $v1, 0x3EDC
+<a name="0x00000200"></a>	0x00000200: 0x8C420000 '..B.' - lw         $v0, 0x0($v0)
+<a name="0x00000204"></a>	0x00000204: 0x346A3EE0 '.>j4' - ori        $t2, $v1, 0x3EE0
+<a name="0x00000208"></a>	0x00000208: 0x34683EE4 '.>h4' - ori        $t0, $v1, 0x3EE4
+<a name="0x0000020C"></a>	0x0000020C: 0x34653EE8 '.>e4' - ori        $a1, $v1, 0x3EE8
+<a name="0x00000210"></a>	0x00000210: 0x00021402 '....' - srl        $v0, $v0, 16
+<a name="0x00000214"></a>	0x00000214: 0x24030307 '...$' - li         $v1, 0x307
+<a name="0x00000218"></a>	0x00000218: 0x14430014 '..C.' - bne        $v0, $v1, <a href="#loc_0000026C">loc_0000026C</a>
+<a name="0x0000021C"></a>	0x0000021C: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+<a name="0x00000220"></a>	0x00000220: 0x8E02006C 'l...' - lw         $v0, 0x6C($s0)
+<a name="0x00000224"></a>	0x00000224: 0xAC4022D8 '."@.' - sw         $zr, 0x22D8($v0)
+<a name="0x00000228"></a>	0x00000228: 0x8E02006C 'l...' - lw         $v0, 0x6C($s0)
+<a name="0x0000022C"></a>	0x0000022C: 0xAC470034 '4.G.' - sw         $a3, 0x34($v0)
+<a name="0x00000230"></a>	0x00000230: 0x8E02006C 'l...' - lw         $v0, 0x6C($s0)
+<a name="0x00000234"></a>	0x00000234: 0x00491021 '!.I.' - addu       $v0, $v0, $t1
+<a name="0x00000238"></a>	0x00000238: 0xAC460000 '..F.' - sw         $a2, 0x0($v0)
+<a name="0x0000023C"></a>	0x0000023C: 0x8E02006C 'l...' - lw         $v0, 0x6C($s0)
+<a name="0x00000240"></a>	0x00000240: 0x004A1021 '!.J.' - addu       $v0, $v0, $t2
+<a name="0x00000244"></a>	0x00000244: 0xAC400000 '..@.' - sw         $zr, 0x0($v0)
+<a name="0x00000248"></a>	0x00000248: 0x8E02006C 'l...' - lw         $v0, 0x6C($s0)
+<a name="0x0000024C"></a>	0x0000024C: 0x00481021 '!.H.' - addu       $v0, $v0, $t0
+<a name="0x00000250"></a>	0x00000250: 0xAC440000 '..D.' - sw         $a0, 0x0($v0)
+<a name="0x00000254"></a>	0x00000254: 0x8E02006C 'l...' - lw         $v0, 0x6C($s0)
+<a name="0x00000258"></a>	0x00000258: 0x00451021 '!.E.' - addu       $v0, $v0, $a1
+<a name="0x0000025C"></a>	0x0000025C: 0xAC400000 '..@.' - sw         $zr, 0x0($v0)
+<a name="0x00000260"></a>	0x00000260: 0x0C000045 'E...' - jal        <a href="#ClearCaches">ClearCaches</a>
+<a name="0x00000264"></a>	0x00000264: 0x00000000 '....' - nop        
+<a name="0x00000268"></a>	0x00000268: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+
+<a name="loc_0000026C">loc_0000026C:</a>
+		; Refs: <a href="#0x00000198">0x00000198</a> <a href="#0x00000218">0x00000218</a> 
+<a name="0x0000026C"></a>	0x0000026C: 0x8C790640 '@.y.' - lw         $t9, 0x640($v1)
+<a name="0x00000270"></a>	0x00000270: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000274"></a>	0x00000274: 0x13200005 '.. .' - beqz       $t9, <a href="#loc_0000028C">loc_0000028C</a>
+<a name="0x00000278"></a>	0x00000278: 0x00001021 '!...' - move       $v0, $zr
+<a name="0x0000027C"></a>	0x0000027C: 0x8FBF0004 '....' - lw         $ra, 0x4($sp)
+<a name="0x00000280"></a>	0x00000280: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000284"></a>	0x00000284: 0x03200008 '.. .' - jr         $t9
+<a name="0x00000288"></a>	0x00000288: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+<a name="loc_0000028C">loc_0000028C:</a>
+		; Refs: <a href="#0x00000274">0x00000274</a> 
+<a name="0x0000028C"></a>	0x0000028C: 0x8FBF0004 '....' - lw         $ra, 0x4($sp)
+<a name="0x00000290"></a>	0x00000290: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000294"></a>	0x00000294: 0x03E00008 '....' - jr         $ra
+<a name="0x00000298"></a>	0x00000298: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+; End Subroutine OnModuleStart
+; ======================================================
+
+; ==== Section .sceStub.text - Address 0x0000029C Size 0x00000058 Flags 0x0006
+
+; ======================================================
+; Subroutine sctrlHENSetStartModuleHandler - Address 0x0000029C 
+<a name="sctrlHENSetStartModuleHandler">sctrlHENSetStartModuleHandler:</a>
+		; Refs: <a href="#0x0000000C">0x0000000C</a> 
+<a name="0x0000029C"></a>	0x0000029C: 0x03E00008 '....' - jr         $ra
+<a name="0x000002A0"></a>	0x000002A0: 0x00000000 '....' - nop        
+
+; End Subroutine sctrlHENSetStartModuleHandler
+; ======================================================
+
+; ======================================================
+; Subroutine sceKernelGetCompiledSdkVersion - Address 0x000002A4 
+<a name="sceKernelGetCompiledSdkVersion">sceKernelGetCompiledSdkVersion:</a>
+		; Refs: <a href="#0x00000054">0x00000054</a> 
+<a name="0x000002A4"></a>	0x000002A4: 0x03E00008 '....' - jr         $ra
+<a name="0x000002A8"></a>	0x000002A8: 0x00000000 '....' - nop        
+
+; End Subroutine sceKernelGetCompiledSdkVersion
+; ======================================================
+
+; ======================================================
+; Subroutine sceRtcGetCurrentClockLocalTime - Address 0x000002AC 
+<a name="sceRtcGetCurrentClockLocalTime">sceRtcGetCurrentClockLocalTime:</a>
+		; Refs: <a href="#0x00000034">0x00000034</a> 
+<a name="0x000002AC"></a>	0x000002AC: 0x03E00008 '....' - jr         $ra
+<a name="0x000002B0"></a>	0x000002B0: 0x00000000 '....' - nop        
+
+; End Subroutine sceRtcGetCurrentClockLocalTime
+; ======================================================
+
+; ======================================================
+; Subroutine sceRtcSetDosTime - Address 0x000002B4 
+<a name="sceRtcSetDosTime">sceRtcSetDosTime:</a>
+		; Refs: <a href="#0x0000002C">0x0000002C</a> 
+<a name="0x000002B4"></a>	0x000002B4: 0x03E00008 '....' - jr         $ra
+<a name="0x000002B8"></a>	0x000002B8: 0x00000000 '....' - nop        
+
+; End Subroutine sceRtcSetDosTime
+; ======================================================
+
+; ======================================================
+; Subroutine Kprintf - Address 0x000002BC 
+<a name="Kprintf">Kprintf:</a>
+		; Refs: <a href="#0x00000088">0x00000088</a> 
+<a name="0x000002BC"></a>	0x000002BC: 0x03E00008 '....' - jr         $ra
+<a name="0x000002C0"></a>	0x000002C0: 0x00000000 '....' - nop        
+
+; End Subroutine Kprintf
+; ======================================================
+
+; ======================================================
+; Subroutine sceKernelIcacheClearAll - Address 0x000002C4 
+<a name="sceKernelIcacheClearAll">sceKernelIcacheClearAll:</a>
+		; Refs: <a href="#0x00000128">0x00000128</a> 
+<a name="0x000002C4"></a>	0x000002C4: 0x03E00008 '....' - jr         $ra
+<a name="0x000002C8"></a>	0x000002C8: 0x00000000 '....' - nop        
+
+; End Subroutine sceKernelIcacheClearAll
+; ======================================================
+
+; ======================================================
+; Subroutine sceIoAddDrv - Address 0x000002CC 
+<a name="sceIoAddDrv">sceIoAddDrv:</a>
+		; Refs: <a href="#0x00000170">0x00000170</a> 
+<a name="0x000002CC"></a>	0x000002CC: 0x03E00008 '....' - jr         $ra
+<a name="0x000002D0"></a>	0x000002D0: 0x00000000 '....' - nop        
+
+; End Subroutine sceIoAddDrv
+; ======================================================
+
+; ======================================================
+; Subroutine sceKernelDcacheWritebackAll - Address 0x000002D4 
+<a name="sceKernelDcacheWritebackAll">sceKernelDcacheWritebackAll:</a>
+		; Refs: <a href="#0x0000011C">0x0000011C</a> 
+<a name="0x000002D4"></a>	0x000002D4: 0x03E00008 '....' - jr         $ra
+<a name="0x000002D8"></a>	0x000002D8: 0x00000000 '....' - nop        
+
+; End Subroutine sceKernelDcacheWritebackAll
+; ======================================================
+
+; ======================================================
+; Subroutine strcmp - Address 0x000002DC 
+<a name="strcmp">strcmp:</a>
+		; Refs: <a href="#0x00000190">0x00000190</a> 
+<a name="0x000002DC"></a>	0x000002DC: 0x03E00008 '....' - jr         $ra
+<a name="0x000002E0"></a>	0x000002E0: 0x00000000 '....' - nop        
+
+; End Subroutine strcmp
+; ======================================================
+
+; ======================================================
+; Subroutine strncpy - Address 0x000002E4 
+<a name="strncpy">strncpy:</a>
+		; Refs: <a href="#0x000000E8">0x000000E8</a> 
+<a name="0x000002E4"></a>	0x000002E4: 0x03E00008 '....' - jr         $ra
+<a name="0x000002E8"></a>	0x000002E8: 0x00000000 '....' - nop        
+
+; End Subroutine strncpy
+; ======================================================
+
+; ======================================================
+; Subroutine memmove - Address 0x000002EC 
+<a name="memmove">memmove:</a>
+		; Refs: <a href="#0x000000CC">0x000000CC</a> 
+<a name="0x000002EC"></a>	0x000002EC: 0x03E00008 '....' - jr         $ra
+<a name="0x000002F0"></a>	0x000002F0: 0x00000000 '....' - nop        
+
+; End Subroutine memmove
+; ======================================================
+
+; ==== Section .lib.ent.top - Address 0x000002F4 Size 0x00000004 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x000002F0"></a>0x000002F4 - 00 00 00 00 | -- -- -- -- | -- -- -- -- | -- -- -- -- - ................
+
+; ==== Section .lib.ent - Address 0x000002F8 Size 0x00000010 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x000002F0"></a>0x000002F8 - 00 00 00 00 | 00 00 00 80 | 04 01 01 00 | 00 04 00 00 - ................
+
+; ==== Section .lib.ent.btm - Address 0x00000308 Size 0x00000004 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00000300"></a>0x00000308 - 00 00 00 00 | -- -- -- -- | -- -- -- -- | -- -- -- -- - ................
+
+; ==== Section .lib.stub.top - Address 0x0000030C Size 0x00000004 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00000300"></a>0x0000030C - 00 00 00 00 | -- -- -- -- | -- -- -- -- | -- -- -- -- - ................
+
+; ==== Section .lib.stub - Address 0x00000310 Size 0x000000A0 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00000310"></a>0x00000310 - 14 04 00 00 | 00 00 09 00 | 05 00 01 00 | C0 04 00 00 - ................
+<a name="0x00000320"></a>0x00000320 - 9C 02 00 00 | 2C 04 00 00 | 11 00 01 00 | 05 00 01 00 - ....,...........
+<a name="0x00000330"></a>0x00000330 - C4 04 00 00 | A4 02 00 00 | 40 04 00 00 | 00 00 01 00 - ........@.......
+<a name="0x00000340"></a>0x00000340 - 05 00 02 00 | C8 04 00 00 | AC 02 00 00 | 54 04 00 00 - ............T...
+<a name="0x00000350"></a>0x00000350 - 00 00 01 00 | 05 00 01 00 | D0 04 00 00 | BC 02 00 00 - ................
+<a name="0x00000360"></a>0x00000360 - 68 04 00 00 | 00 00 01 00 | 05 00 01 00 | D4 04 00 00 - h...............
+<a name="0x00000370"></a>0x00000370 - C4 02 00 00 | 80 04 00 00 | 00 00 01 00 | 05 00 01 00 - ................
+<a name="0x00000380"></a>0x00000380 - D8 04 00 00 | CC 02 00 00 | 98 04 00 00 | 00 00 09 00 - ................
+<a name="0x00000390"></a>0x00000390 - 05 00 01 00 | DC 04 00 00 | D4 02 00 00 | AC 04 00 00 - ................
+<a name="0x000003A0"></a>0x000003A0 - 00 00 01 00 | 05 00 03 00 | E0 04 00 00 | DC 02 00 00 - ................
+
+; ==== Section .lib.stub.btm - Address 0x000003B0 Size 0x00000004 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x000003B0"></a>0x000003B0 - 00 00 00 00 | -- -- -- -- | -- -- -- -- | -- -- -- -- - ................
+
+; ==== Section .rodata.sceModuleInfo - Address 0x000003C0 Size 0x00000040 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x000003C0"></a>0x000003C0 - 07 10 00 01 | 70 73 70 46 | 61 74 4D 73 | 33 37 31 5F - ....pspFatMs371_
+<a name="0x000003D0"></a>0x000003D0 - 46 72 69 65 | 6E 64 00 00 | 00 00 00 00 | 00 00 00 00 - Friend..........
+<a name="0x000003E0"></a>0x000003E0 - 30 86 00 00 | F8 02 00 00 | 08 03 00 00 | 10 03 00 00 - 0...............
+<a name="0x000003F0"></a>0x000003F0 - B0 03 00 00 | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 - ................
+
+; Strings
+0x000003C4: "pspFatMs371_Friend"
+
+; ==== Section .rodata.sceResident - Address 0x00000400 Size 0x000000C0 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00000400"></a>0x00000400 - DB AC 32 D6 | A7 73 1D F0 | 00 00 00 00 | C0 03 00 00 - ..2..s..........
+<a name="0x00000410"></a>0x00000410 - 00 00 00 00 | 53 79 73 74 | 65 6D 43 74 | 72 6C 46 6F - ....SystemCtrlFo
+<a name="0x00000420"></a>0x00000420 - 72 4B 65 72 | 6E 65 6C 00 | 00 00 00 00 | 53 79 73 4D - rKernel.....SysM
+<a name="0x00000430"></a>0x00000430 - 65 6D 46 6F | 72 4B 65 72 | 6E 65 6C 00 | 00 00 00 00 - emForKernel.....
+<a name="0x00000440"></a>0x00000440 - 73 63 65 52 | 74 63 5F 64 | 72 69 76 65 | 72 00 00 00 - sceRtc_driver...
+<a name="0x00000450"></a>0x00000450 - 00 00 00 00 | 4B 44 65 62 | 75 67 46 6F | 72 4B 65 72 - ....KDebugForKer
+<a name="0x00000460"></a>0x00000460 - 6E 65 6C 00 | 00 00 00 00 | 4C 6F 61 64 | 43 6F 72 65 - nel.....LoadCore
+<a name="0x00000470"></a>0x00000470 - 46 6F 72 4B | 65 72 6E 65 | 6C 00 00 00 | 00 00 00 00 - ForKernel.......
+<a name="0x00000480"></a>0x00000480 - 49 6F 46 69 | 6C 65 4D 67 | 72 46 6F 72 | 4B 65 72 6E - IoFileMgrForKern
+<a name="0x00000490"></a>0x00000490 - 65 6C 00 00 | 00 00 00 00 | 55 74 69 6C | 73 46 6F 72 - el......UtilsFor
+<a name="0x000004A0"></a>0x000004A0 - 4B 65 72 6E | 65 6C 00 00 | 00 00 00 00 | 53 79 73 63 - Kernel......Sysc
+<a name="0x000004B0"></a>0x000004B0 - 6C 69 62 46 | 6F 72 4B 65 | 72 6E 65 6C | 00 00 00 00 - libForKernel....
+
+; Strings
+0x00000414: "SystemCtrlForKernel"
+0x0000042C: "SysMemForKernel"
+0x00000440: "sceRtc_driver"
+0x00000454: "KDebugForKernel"
+0x00000468: "LoadCoreForKernel"
+0x00000480: "IoFileMgrForKernel"
+0x00000498: "UtilsForKernel"
+0x000004AC: "SysclibForKernel"
+
+; ==== Section .rodata.sceNid - Address 0x000004C0 Size 0x0000002C Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x000004C0"></a>0x000004C0 - CB BE 90 1C | 73 45 11 FC | 1B 7D C2 E7 | 64 F2 06 F0 - ....sE...}..d...
+<a name="0x000004D0"></a>0x000004D0 - BC 70 F3 84 | C6 9A 77 D8 | 74 2A 98 8E | FA C3 D1 79 - .p....w.t*.....y
+<a name="0x000004E0"></a>0x000004E0 - 32 89 AB C0 | 97 76 9A B4 | 92 25 8D A4 | -- -- -- -- - 2....v...%......
+
+; ==== Section .rodata - Address 0x000004EC Size 0x00000050 Flags 0x0032
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x000004E0"></a>0x000004EC - 45 72 72 6F | 72 3A 20 64 | 5F 70 72 69 | 76 61 74 65 - Error: d_private
+<a name="0x000004F0"></a>0x000004FC - 20 69 6E 76 | 61 6C 69 64 | 20 73 69 7A | 65 20 28 30 -  invalid size (0
+<a name="0x00000500"></a>0x0000050C - 78 25 30 38 | 58 29 20 66 | 6F 72 20 73 | 64 6B 5F 76 - x%08X) for sdk_v
+<a name="0x00000510"></a>0x0000051C - 65 72 73 69 | 6F 6E 20 3E | 3D 20 33 2E | 38 30 0A 00 - ersion >= 3.80..
+<a name="0x00000520"></a>0x0000052C - 73 63 65 4D | 53 46 41 54 | 5F 44 72 69 | 76 65 72 00 - sceMSFAT_Driver.
+
+; Strings
+0x000004EC: "Error: d_private invalid size (0x%08X) for sdk_version >= 3.80\n"
+0x0000052C: "sceMSFAT_Driver"
+</pre></body></html>

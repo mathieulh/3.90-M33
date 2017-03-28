@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="psplibdocdisplay.xsl" ?>
+<PSPLIBDOC>
+	<PRXFILES>
+		<PRXFILE>
+		<PRX>reboot150.prx</PRX>
+		<PRXNAME>Rebtt</PRXNAME>
+		<LIBRARIES>
+		</LIBRARIES>
+		</PRXFILE>
+	</PRXFILES>
+</PSPLIBDOC>

@@ -1,0 +1,198 @@
+InterruptManager
+CA04A2B9, 21BF, sceKernelRegisterSubIntrHandler
+D61E6961, 21C1, sceKernelReleaseSubIntrHandler
+FB8E22EC, 21C3, sceKernelEnableSubIntr
+
+ThreadManForUser
+1FB15A32, 21CE, sceKernelSetEventFlag
+278C0DF5, 21D0, sceKernelWaitThreadEnd
+28B6489C, 21D2, sceKernelDeleteSema
+293B45B8, 21D3, sceKernelGetThreadId
+30FD48F0, 21D6, sceKernelPollEventFlag
+349D6D6C, 21DB, sceKernelCheckCallback
+369ED59D, 21DC, sceKernelGetSystemTimeLow
+383F7BCC, 21DE, sceKernelTerminateDeleteThread
+3F53E640, 21E2, sceKernelSignalSema
+402FCF22, 21E3, sceKernelWaitEventFlag
+446D8DE6, 21E4, sceKernelCreateThread
+4E3A1105, 21E5, sceKernelWaitSema
+55C20A00, 21EA, sceKernelCreateEventFlag
+58B1F937, 21ED, sceKernelPollSema
+64D4540E, 21F2, sceKernelReferThreadProfiler
+68DA9E36, 21F4, sceKernelDelayThreadCB
+6D212BAC, 21F5, sceKernelWaitSemaCB
+71BC9871, 21F7, sceKernelChangeThreadPriority
+809CE29B, 21FF, sceKernelExitDeleteThread
+812346E4, 2200, sceKernelClearEventFlag
+8218B4DD, 2202, sceKernelReferGlobalProfiler
+82826F70, 2203, sceKernelSleepThreadCB
+82BC5777, 2204, sceKernelGetSystemTimeWide
+9944F31F, 220F, sceKernelSuspendThread
+9FA03CD3, 2211, sceKernelDeleteThread
+AA73C935, 2215, sceKernelExitThread
+BA6B92E2, 221C, sceKernelSysClock2USec
+C07BB470, 2220, sceKernelCreateFpl
+CEADEB47, 2226, sceKernelDelayThread
+D59EAD2F, 222A, sceKernelWakeupThread
+D6DA4BA1, 222B, sceKernelCreateSema
+D979E9BF, 222E, sceKernelAllocateFpl
+DB738F35, 2230, sceKernelGetSystemTime
+E1619D7C, 2232, sceKernelSysClock2USecWide
+E81CAF8F, 2234, sceKernelCreateCallback
+EA748E31, 2236, sceKernelChangeCurrentThreadAttr
+ED1410E0, 2238, sceKernelDeleteFpl
+EDBA5844, 2239, sceKernelDeleteCallback
+F475845D, 223D, sceKernelStartThread
+
+IoFileMgrForUser
+06A70004, 2243, sceIoMkdir
+109F50BC, 2246, sceIoOpen
+27EB27B8, 2249, sceIoLseek
+3251EA56, 224A, sceIoPollAsync
+42EC03AC, 224C, sceIoWrite
+54F5FB11, 224D, sceIoDevctl
+6A638D83, 2252, sceIoRead
+71B19E77, 2254, sceIoLseekAsync
+779103A0, 2255, sceIoRename
+810C4BC3, 2256, sceIoClose
+89AA9906, 2257, sceIoOpenAsync
+A0B5A7C2, 2258, sceIoReadAsync
+ACE946E8, 225B, sceIoGetstat
+B293727F, 225C, sceIoChangeAsyncPriority
+B29DDF9C, 225D, sceIoDopen
+E23EEC33, 2261, sceIoWaitAsync
+E3EB004C, 2262, sceIoDread
+E8BC6571, 2263, sceIoCancel
+EB092469, 2265, sceIoDclose
+FF5940B6, 2267, sceIoCloseAsync
+
+StdioForUser
+172D316E, 2269, sceKernelStdin
+A6BAB2E9, 2271, sceKernelStdout
+F78BA90A, 2272, sceKernelStderr
+
+ModuleMgrForUser
+2E0911AA, 2273, sceKernelUnloadModule
+50F0C1EC, 2274, sceKernelStartModule
+B7F46618, 2279, sceKernelLoadModuleByID
+D1FF982A, 227B, sceKernelStopModule
+D675EBB8, 227D, sceKernelSelfStopUnloadModule
+D8B73127, 227E, ModuleMgrForUser_D8B73127
+F0A26395, 227F, ModuleMgrForUser_F0A26395
+
+SysMemUserForUser
+13A5ABEF, 2281, SysMemUserForUser_13A5ABEF
+237DBD4F, 2282, sceKernelAllocPartitionMemory
+7591C7DB, 2284, SysMemUserForUser_7591C7DB
+9D9A5BA1, 2285, sceKernelGetBlockHeadAddr
+A291F107, 2286, sceKernelMaxFreeMemSize
+B6D61D02, 2288, sceKernelFreePartitionMemory
+F77D77CB, 2289, SysMemUserForUser_F77D77CB
+
+sceSuspendForUser
+090CCB3F, 228C, sceKernelPowerTick
+3AEE7261, 228D, sceKernelPowerUnlock
+A14F40B2, 228F, sceKernelVolatileMemTryLock
+A569E425, 2290, sceKernelVolatileMemUnlock
+EADB1BD7, 2291, sceKernelPowerLock
+
+UtilsForUser
+27CC57F0, 2294, sceKernelLibcTime
+6AD345D7, 229C, sceKernelSetGPO
+71EC4271, 229D, sceKernelLibcGettimeofday
+79D1C3FA, 229F, sceKernelDcacheWritebackAll
+91E4F6A7, 22A2, sceKernelLibcClock
+B435DEC5, 22A5, sceKernelDcacheWritebackInvalidateAll
+
+LoadExecForUser
+05572A5F, 22AD, sceKernelExitGame
+4AC57943, 22AF, sceKernelRegisterExitCallback
+
+sceGe_user
+05DB22CE, 22B4, sceGeUnsetCallback
+1F6752AD, 22B7, sceGeEdramGetSize
+A4FC06A4, 22BC, sceGeSetCallback
+AB49E76A, 22BD, sceGeListEnQueue
+B287BD61, 22BE, sceGeDrawSync
+E47E40E4, 22C3, sceGeEdramGetAddr
+
+sceRtc
+6FF40ACC, 22DB, sceRtcGetTick
+9ED0AE87, 22E0, sceRtcCompareTick
+
+sceAudio
+136CAF51, 22EF, sceAudioOutputBlocking
+13F592BC, 22F0, sceAudioOutputPannedBlocking
+5EC81C55, 22F6, sceAudioChReserve
+6FC46853, 22FA, sceAudioChRelease
+95FD0C2D, 22FE, sceAudioChangeChannelConfig
+B011922F, 2301, sceAudio_B011922F
+B7E1D8E7, 2302, sceAudioChangeChannelVolume
+CB2E439E, 2303, sceAudioSetChannelDataLen
+E2D56B2D, 2305, sceAudioOutputPanned
+
+sceDisplay
+0E20F177, 2308, sceDisplaySetMode
+289D82FE, 230B, sceDisplaySetFrameBuf
+36CDFADE, 230D, sceDisplayWaitVblank
+4D4E10EC, 230F, sceDisplayIsVblank
+773DD3A3, 2311, sceDisplayGetCurrentHcount
+984C27E7, 2314, sceDisplayWaitVblankStart
+
+sceCtrl
+1F4011E6, 231F, sceCtrlSetSamplingMode
+1F803938, 2320, sceCtrlReadBufferPositive
+6A2774F3, 2326, sceCtrlSetSamplingCycle
+
+scePower
+04B7766E, 2338, scePowerRegisterCallback
+DFA8BAF8, 2363, scePowerUnregisterCallback
+EA382A27, 2365, scePower_EA382A27
+
+sceUmdUser
+20628E6F, 2378, sceUmdGetErrorStat
+46EBB729, 237A, sceUmdCheckMedium
+56202973, 237C, sceUmdWaitDriveStatWithTimer
+6B4A146C, 237E, sceUmdGetDriveStat
+8EF08FCE, 2380, sceUmdWaitDriveStat
+AEE7404D, 2381, sceUmdRegisterUMDCallBack
+BD2BDE07, 2382, sceUmdUnRegisterUMDCallBack
+C6183D47, 2383, sceUmdActivate
+
+sceWlanDrv
+D7763699, 2388, sceWlanGetSwitchState
+
+sceUtility
+1579A159, 23BE, 
+2AD8E239, 23C1, sceUtilityMsgDialogInitStart
+34B78343, 23C2, sceUtilityGetSystemParamString
+50C4CD57, 23CE, sceUtilitySavedataInitStart
+64D50C56, 23D1, 
+67AF3428, 23D2, sceUtilityMsgDialogShutdownStart
+8874DBE0, 23D4, sceUtilitySavedataGetStatus
+95FC253B, 23D9, sceUtilityMsgDialogUpdate
+9790B33C, 23DA, sceUtilitySavedataShutdownStart
+9A1C91D7, 23DB, sceUtilityMsgDialogGetStatus
+A5DA2406, 23DD, sceUtilityGetSystemParamInt
+D4B95FFB, 23E4, sceUtilitySavedataUpdate
+
+sceSasCore
+A3589D81, 2428, 
+50A14DFC, 2429, 
+68A46B95, 242A, 
+440CA7D8, 242B, 
+AD84D37F, 242C, 
+99944089, 242D, 
+B7660A23, 242E, 
+019B25EB, 2431, 
+9EC3676A, 2432, 
+5F9529F6, 2433, 
+74AE582A, 2434, 
+CBCD4F79, 2435, 
+42778A9F, 2436, 
+A0CF2FA4, 2437, 
+76F01ACA, 2438, 
+F983B186, 2439, 
+D5A229C9, 243A, 
+33D4AB37, 243B, 
+267A6DD2, 243C, 

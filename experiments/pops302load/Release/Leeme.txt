@@ -1,0 +1,26 @@
+Este plugin es para cargar el emulador de psx de 3.02 en 3.03 OE.
+
+Aunque muchos juegos funcionan mejor en el emulador de 3.03, en algunos casos pasa
+lo contrario, razón por la que es posible que quieras cargar el emulador de 3.02 en determinados
+casos.
+
+Instrucciones:
+
+- Copia seplugins a la raíz de tu memory stick.
+- Usando algunos de los ultimos psardumpers, extrae el firmware 3.02 con la opción del botón X.
+- Una vez hechom copia los siguientes archivos desde /F0/kd a /seplugins/pops302: meaudio.prx,
+mesg_led.prx, pops.prx y popsman.prx
+
+- Entra en el menu de recovery, y ahbilita el plugin pops302ld.prx si quieres cargar el emulador de 3.02.
+- Ejecuta el juego. Se ejecutara sobre el emulador de psx de 3.02
+- Cuando quieras volver a usar el emulador de 3.03, simplemente desactiva el plugin en el menu de recovery.
+
+Problemas conocidos:
+* Durante los tests, probe castlevania sotn comprimido. Note una alta actividad inusual de 
+la memory stick. (nota: el hecho de que los prx esten en la memory stick no tiene nada que ver, ya
+que son rapidamente cargados en la ram).
+No pasababa con el juego descomprimido. (y por supuesto no pasa en 3.03 comprimido).
+No se si este problema afecta a otros juegos.
+En tal caso, puede que sea un problema de la mezcla de modulos, o tal vez sea un problema de 3.02.
+Si experiencias ese problema, puede que sea mejor que intentes solo juegos descomprimidos en caso
+de que notes una lentitud.
